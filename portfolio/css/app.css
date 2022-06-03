@@ -1,0 +1,105 @@
+body {
+    background-color: aliceblue;
+}
+
+.this-is-a-test {
+    background-color: aqua;
+}
+
+#this-should-only-be-used-once-on-a-page {
+    background-color: brown;
+}
+
+.btn-primary {
+    background-color: aquamarine;
+}
+
+/* Chalkboard example */
+
+.chalkboard {
+    color: #E8E8E8E8;
+    font-family: cursive 'Courier New', Courier, monospace;
+    display: block;
+    position: relative;
+    min-height: auto;
+    background-color: #497959;
+    margin: 30px auto 0 auto;
+    padding: 20px 30px;
+    overflow-y: auto;
+    box-shadow: -1px 2px 2px 0px #555, inset 0 0 10px #555;
+    border: #B78240 solid 10px;
+    border-radius: 10px;
+}
+
+.chalkboard a {
+    color: #ff0
+}
+
+/* spinning earth example */
+
+.earth {
+    width: 200px;
+    height: 200px;
+    background-image: url(https://raw.githubusercontent.com/cartalan/TierraGirando/master/img/mapa.png);
+    background-size: cover;
+    border-radius: 50%;
+    /* position: relative;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    margin: auto;
+    animation: rotationEarth 10s infinite linear;
+    -webkit-animation: rotationEarth 10s infinite linear;
+}
+
+@-webkit-keyframes rotationEarth {
+    from {
+        background-position: left center;
+    } to {
+        background-position: -396px center;
+    }
+}
+
+@keyframes rotationEarth {
+    from {
+        background-position: left center;
+    } to {
+        background-position: -396px center;
+    }
+}
+
+
+/* turntable */
+
+#turntable {
+    position: relative;
+    width: 260px;
+    height: 200px;
+    margin-top: 127px;
+    left: 10%;
+}
+
+#table-shadow {
+    position: relative;
+    bottom: 53px;
+    width: 299px;
+    height: 220px;
+    background: black;
+    border-radius: 10px;
+    transform: rotateZ(10deg) skewX(-25deg);
+    opacity: 0.4;
+}
+
+#wood {
+    position: relative;
+    bottom: -193px;
+    /* left: 63px; */
+    width: 299px;
+    height: 26px;
+    background: blue;
+    border-radius: 0 0 15px 8px;
+    transform: rotateZ(0deg) skewX(10deg);
+    overflow: hidden;
+    z-index: 1;
+}
