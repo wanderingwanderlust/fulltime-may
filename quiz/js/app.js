@@ -47,7 +47,7 @@
     );
 
     var q2 = new Question(
-        'What is the name of this OH teach',
+        'What is the name of this OH teacher',
         ['Ryan', 'Greg'],
         1
     )
