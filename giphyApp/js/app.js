@@ -1,5 +1,5 @@
 const gifContainer = document.getElementById('gif-container')
-const apiKey = 'c6f5rGLa2DhtPkVLQTtXask5jspmz8yU';
+const apiKey = 'INSERT_YOUR_API_KEY_HERE';
 
 
 async function fetchGifs() {
