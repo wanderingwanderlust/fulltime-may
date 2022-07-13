@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import CarouselStrap from './components/CarouselStrap';
+import HomePage from './pages/HomePage';
 import './App.css';
 import {useEffect, useState} from 'react'
 import axios from 'axios'
@@ -22,7 +22,10 @@ function App() {
 
   return (
     <div className="App">
-      <CarouselStrap images={homeImages} />
+      <div className='container'>
+      <HomePage></HomePage>
+      </div>
+      
     </div>
   );
 }
