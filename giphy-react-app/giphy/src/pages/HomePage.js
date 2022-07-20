@@ -1,6 +1,7 @@
 import CarouselStrap from "../components/CarouselStrap";
 import CardStrap from "../components/CardStrap";
 import ToDoHooks from "../todo/ToDoHooks";
+import ToDoClass from "../todo/ToDoClass";
 // import 'dotenv/config';
 import { useEffect, useState } from 'react';
 
@@ -32,7 +33,11 @@ function HomePage() {
                 <CardStrap />
             </div>
             <div className="row">
-                <ToDoHooks />
+                {/* <ToDoHooks /> */}
+            </div>
+            <div className="row">
+                <hr></hr>
+                <ToDoClass />
             </div>
         </div>
     )
