@@ -21,7 +21,14 @@ function HomePage() {
         // if(homeImages.length === 0) {
             const res = await axios.get(`https://api.giphy.com/v1/gifs/trending?&api_key=${apiKey}&rating=g&limit=5`);
             setHomeImages(res.data.data)
+            findUser()
         // }
+    }
+
+    function findUser() {
+        const getUser = JSON.parse(window.localStorage.getItem('user'));
+        console.log('user from localstorage', getUser)
+        console.log(getUser.name)
     }
 
 

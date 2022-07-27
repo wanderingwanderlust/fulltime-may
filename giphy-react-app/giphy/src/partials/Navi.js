@@ -15,6 +15,9 @@ function Navi() {
                         <NavLink tag={Link} to='/about'>About</NavLink>
                     </NavItem>
                     <NavItem>
+                        <NavLink tag={Link} to='/create-account'>Create Account</NavLink>
+                    </NavItem>
+                    <NavItem>
                         <NavLink tag={Link} to='/login'>Login</NavLink>
                     </NavItem>
                     <NavItem>

@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import Navi from './partials/Navi';
 import GifSearchPage from './pages/GifSearchPage';
 import GifSavePage from './pages/GifSavedPage';
+import CreateAccount from './pages/CreateAccount';
 import './App.css';
 import {useEffect, useState} from 'react'
 import axios from 'axios'
@@ -38,6 +39,7 @@ function App() {
         <Routes>
           <Route index element={<HomePage />} />
           <Route path='/about' element={<About />} />
+          <Route path='/create-account' element={<CreateAccount />} />
           <Route path='/login' element={<Login />} />
           <Route path='/search' element={<GifSearchPage />} />
           <Route path='/saved' element={<GifSavePage />} />
